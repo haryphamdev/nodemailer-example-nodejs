@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+
+<style>
+    .input-email {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 300px;
+    border-radius: 3px
+    }
+
+    .text-area {
+        margin-bottom: 5px;
+        width: 301px; 
+        height: 118px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form action="/send-email" method="POST">
+        <h1>Sending an email with Nodemailer tutorial</h1>
+        <div>
+            <input class="input-email" type="text" placeholder="your email" name="email" />
+        </div>
+        <div>
+            <textarea class="text-area" placeholder="your content goes here" name="content"></textarea>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
+</html>
